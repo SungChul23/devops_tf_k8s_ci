@@ -2,14 +2,14 @@ name: Application CI
 
 on:
   pull_request:
-    branches: [ci-dev]
+    branches: [main]
     paths:
       - "apps/**"
       - "infra/**"
       - "scripts/ci/**"
       - ".github/workflows/ci.yml"
   push:
-    branches: [ci-dev]
+    branches: [main]
     paths:
       - "apps/**"
       - "infra/**"
@@ -257,8 +257,8 @@ jobs:
   #           "WEB_IMAGE=${WEB_IMAGE}:${IMAGE_TAG}" \
   #           "WAS_IMAGE=${WAS_IMAGE}:${IMAGE_TAG}"
 
-  #         kustomize build . > /tmp/de-ai-25.yaml
-  #         test -s /tmp/de-ai-25.yaml
+  #         kustomize build . > /tmp/de-ai-22.yaml
+  #         test -s /tmp/de-ai-22.yaml
 
   #     - name: Commit and push CD change
   #       working-directory: tf-k8s-cd

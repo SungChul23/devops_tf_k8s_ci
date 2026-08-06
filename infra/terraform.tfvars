@@ -16,11 +16,11 @@ db_allocated_storage = 20
 # ------------------------------------------------------------
 # GitHub Actions CI + OIDC 관련 추가
 # ------------------------------------------------------------
-enable_github_actions_ci = true
-github_owner             = "SungChul23"
-github_ci_repository     = "devops_tf_k8s_ci"
-github_ci_branch         = "main"
-create_github_oidc_provider = true
+enable_github_actions_ci    = true
+github_owner                = "SungChul23"
+github_ci_repository        = "devops_tf_k8s_ci"
+github_ci_branch            = "main"
+create_github_oidc_provider = false
 # 조회발급
 github_owner_id         = "143672987"
 github_ci_repository_id = "1324578169"
