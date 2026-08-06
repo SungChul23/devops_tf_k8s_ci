@@ -1,5 +1,5 @@
-aws_region   = "ap-northeast-2"
-project_name = "de-ai-25-eks-auto"
+aws_region   = "us-east-1"
+project_name = "de-ai-22-eks-auto"
 environment  = "dev"
 
 kubernetes_version = "1.35"
@@ -14,13 +14,13 @@ db_instance_class    = "db.t3.micro"
 db_allocated_storage = 20
 
 # ------------------------------------------------------------
-# GitHub Actions CI
+# GitHub Actions CI + OIDC 관련 추가
 # ------------------------------------------------------------
 enable_github_actions_ci = true
-github_owner             = ""
-github_ci_repository     = ""
-github_ci_branch         = ""
+github_owner             = "SungChul23"
+github_ci_repository     = "devops_tf_k8s_ci"
+github_ci_branch         = "main"
 create_github_oidc_provider = true
 # 조회발급
-github_owner_id         = ""
-github_ci_repository_id = ""
+github_owner_id         = "143672987"
+github_ci_repository_id = "1324578169"
